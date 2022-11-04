@@ -54,22 +54,22 @@ This is what will be deliovered
 
 ### Feature 2
 
-### Feature 3
-
-### Feature 4
-
 ## Failure modes
 
-Identify possible failure situations taht you are accounting for
+Identify possible failure situations that are not explicitly covered by your design.
 
-* Case 1
-* Case 2
+Example:
+
+| Feature/Function| Failure/Cause| Impact | Risk | Probabilty | Mitigation |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Data Entry | SQL Injection  | Security and Data Risk  | 9 | 6 | Input scrub |
+| Invalid zip| User error | Data integrity  | 3 | 5 | Data validation |
+| | | | | | |
+| | | | | | |
 
 ## Security
 
-Threat assessment.
-
-What security implementaitons will be included.
+[Threat assessment template](https://rndwiki-pro.its.hpecorp.net/display/HCSS/CTO+Architecture+Page+Template)
 
 ## References (example)
 
