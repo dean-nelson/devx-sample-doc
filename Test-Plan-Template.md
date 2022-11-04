@@ -1,24 +1,26 @@
 # Feature Test Plan
-| Author:		| Status: 	(WIP \| In Review \| Approved \| Obsolete) Track in git?|
+
+| Author:  | Status: (WIP \| In Review \| Approved \| Obsolete) Track in git?|
 | :--- | :--- |
-| Engineering Manager:	| Created: 	|
-| Sponsor:		| Milestone/Initiative:	|
-| Link to Design :	[Design](https://google.com)	|
-# Introduction 
+| Engineering Manager: | Created: |
+| Sponsor: | Milestone/Initiative: |
+| Link to Design : [Design](https://google.com) |
+
+## Introduction
 
 The introduction with supporting content
 
-# Risks and Assumptions 
+## Risks and Assumptions
 
-Service ABC is complete and can be deployed 
+Service ABC is complete and can be deployed
 
-# Test Approach 
+## Test Approach
 
 The test apprach
 
-# Scope
+## Scope
 
-## Feature Testing Scope (IS) 
+### Feature Testing Scope (IS)
 
 This is what will be tested
 
@@ -27,42 +29,31 @@ This is what will be tested
   * Detail 2
   * Detail 3
   
-* **More Stuff** 
+* **More Stuff**
   * More Detail 1
   * More Detail 2
   
-
 > Note: Feature Testing Scope planning depends on some designs yet to be done, for this reason some points can be added or removed.  
 
-## Feature Testing Scope (IS-NOT) 
+### Feature Testing Scope (IS-NOT)
 
 * **Not Stuff**
   * Detail 1
   
-* **More Not Stuff** 
+* **More Not Stuff**
   * More Detail 1
 
-# Dependencies
+## Dependencies
 
 Service A must be running, Service B must be running
 
-# Failure modes (Can link back to feature design)
-Identify possilbe failure situations taht you are accounting for
-* Case 1
-* Case 2
+## Test Cases
 
-# Security
-Example - The current security scans must run successfully with out regressions.
-
-
-
-# Test Cases
-
-## Feature 1 (Import feature from desgn doc?  Validate coverage?)
+### Feature 1 (Import feature from desgn doc?  Validate coverage?)
 
 ### Test Case 1 - Summary (Description can be exported to actual test.  Should we validate tests are written?)
 
-#### Tags: A, B, C | Automated: Y/N | Precondition: | Type:
+#### Tags: A, B, C | Automated: Y/N | Precondition: | Type: Automated | Manual  Frequency: PR | Nightly | Weekly
 
 ```Robot
   [Documentation]
@@ -96,6 +87,7 @@ Example - The current security scans must run successfully with out regressions.
 ### Test Case 1 - Summary
 
 #### Tags: A, B, C
+
 ```Robot
 Check if Platform Agent is able to create subscription and check if the information is as expected 
     [Documentation]
@@ -123,9 +115,11 @@ Check if Platform Agent is able to create subscription and check if the informat
   ...    == Jira Task ==
   ...    Task link
 ```
+
 ### Test Case 2 - Summary
 
 #### Tags: A, B, C
+
 ```Robot
     [Documentation]
   ...    == Description ==
@@ -153,26 +147,44 @@ Check if Platform Agent is able to create subscription and check if the informat
   ...    Task link
 ```
 
-# Performance, Scale and Longevity
+## Failure modes (Can link back to feature design)
 
-# Shared Library and Test Automation Suggestions 
+Identify possible failure situations taht you are accounting for
+
+* Case 1
+* Case 2
+
+## Security
+
+Example - The current security scans must run successfully with out regressions.
+
+## Performance, Scale and Longevity
+
+## Shared Library and Test Automation Suggestions
 
 * Idea 1
 * Idea 2
 * Idea 3
 
-# References 
+## References
 
-## Additional Design
-* [Link 1](https://google.com)
+### Additional Design (example)
+
 * [Link 1](https://google.com)
   
-## Wiki
+### Wiki (example)
 
 * [Link 1](https://google.com)
 
+## Glossary
 
-# Glossary 
- 
 * **GLCP** – Green Lake Cloud Platform
 
+## Checklist
+
+* [ ] Mercury
+* [x] Venus
+* [x] Earth (Orbit/Moon)
+* [x] Mars
+* [ ] Jupiter
+* [ ] Saturn

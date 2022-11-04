@@ -1,26 +1,26 @@
-
 # Feature Design Template
-| Author:		| Status: 	(Track in GIT ??? ) |
-| :--- | :--- |
-| Engineering Manager:		| Created: 	|
-| Sponsor:		| Milestone/Initiative:	|
-| Link to requirement :	[Requirement 1](https://google.com)	|
 
-# Introduction
+| Author: | Status: (Track in GIT ??? ) |
+| :--- | :--- |
+| Engineering Manager: | Created: |
+| Sponsor: | Milestone/Initiative: |
+| Link to requirement : [Requirement 1](https://google.com) |
+
+## Introduction
 
 The introduction with supporting content
 
-# Risks and Assumptions
+## Risks and Assumptions
 
-*	Shared libraries are tested and available
+* Shared libraries are tested and available
 
-# Approach
+## Approach
 
 Design Scope
 
-# Scope
+## Scope
 
-## Feature Scope (IS) 
+### Feature Scope (IS)
 
 This is what will be deliovered
 
@@ -28,53 +28,63 @@ This is what will be deliovered
   * Detail 1
   * Detail 2
   
-* **More Stuff** 
+* **More Stuff**
   * More Detail 1
   * More Detail 2
 
-## Feature Scope (IS-NOT) 
+### Feature Scope (IS-NOT)
 
 * **Not Stuff**
   * Detail 1
   * Detail 2
   
-* **More Not Stuff** 
+* **More Not Stuff**
   * More Detail 1
   * More Detail 2
 
-# Failure modes
-Identify possilbe failure situations taht you are accounting for
-* Case 1
-* Case 2
-
-# Secutity
-
-Threat assessment.
-
-What security implementaitons will be included. 
-
-# Design Conisderations (Optional)
+## Design Considerations (Optional)
 
     ## Consideration 1
 
     ## Consideration 2
 
-# Design
+## Design
 
-## Feature 1 (could be exported to test plan,  should we require 1:1 in test plan?)
+### Feature 1 (could be exported to test plan,  should we require 1:1 in test plan?)
 
-    ## Feature 1
+### Feature 2
 
-    ## Feature 1
+### Feature 3
 
-    ## Feature 1
+### Feature 4
 
+## Failure modes
 
+Identify possible failure situations taht you are accounting for
 
-# References
+* Case 1
+* Case 2
+
+## Security
+
+Threat assessment.
+
+What security implementaitons will be included.
+
+## References (example)
+
 * [Link 1](https://google.com)
 * [Link 1](https://google.com)
 
-# Glossary 
+## Glossary
 
 * **GLCP** – Green Lake Cloud Platform
+
+## Checklist
+
+* [ ] Mercury
+* [x] Venus
+* [x] Earth (Orbit/Moon)
+* [x] Mars
+* [ ] Jupiter
+* [ ] Saturn
