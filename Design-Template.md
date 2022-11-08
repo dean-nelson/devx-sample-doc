@@ -6,17 +6,36 @@
 | Sponsor: | Milestone/Initiative: |
 | Link to requirement : [Requirement 1](https://google.com) |
 
+## Changelog (if we use git, the git change history could replace this section)
+
+| Date:  | Author: | Change: |
+| :--- | :--- | :--- |
+| 2022-xx-xx | \<name\> | description |
+| 2022-xx-xx | \<name\> | description |
+
+## Design Consideration Checklist
+
+* [Y//N] API Changes
+* [Y//N] UI Changes
+* [Y//N] Testibility Review
+* [Y//N] Do Deployment dependencies exist
+* [Y//N] Failure Modes Reviewed
+* [Y//N] Usability Reviewed
+* [Y//N] HA/DR Reviewed
+* [Y//N] Scale & Performance Evaluated
+* [Y//N] Security Threat Assessment
+
 ## Introduction
 
-The introduction with supporting content
+Description
+
+## Design Approach
+
+Design Scope
 
 ## Risks and Assumptions
 
 * Shared libraries are tested and available
-
-## Approach
-
-Design Scope
 
 ## Scope
 
@@ -42,13 +61,13 @@ This is what will be deliovered
   * More Detail 1
   * More Detail 2
 
-## Design Considerations (Optional)
+## Design
+
+### Design Considerations
 
     ## Consideration 1
 
     ## Consideration 2
-
-## Design
 
 ### Feature 1 (could be exported to test plan,  should we require 1:1 in test plan?)
 
@@ -82,9 +101,15 @@ Example:
 
 ## Checklist
 
-* [ ] Mercury
-* [x] Venus
-* [x] Earth (Orbit/Moon)
-* [x] Mars
-* [ ] Jupiter
-* [ ] Saturn
+* [ ] Item 1
+* [x] Item 2
+* [x] Item 3
+* [x] Item 4
+
+## Reviews/Approvals
+
+| Role:  | Reviewer | Approved | Rejected | Notes: |
+| :--- | :--- | :--- | :--- | :--- |
+| Program: | \<assigned pm\> | X | | |
+| Architect: | \<assigned architect \> | | X | |
+| Test Lead:| \<assigned test lead \> | X | | |

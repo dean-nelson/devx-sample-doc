@@ -6,17 +6,39 @@
 | Sponsor: | Milestone/Initiative: |
 | Link to Design : [Design](https://google.com) |
 
+## Changelog (if we use git, the git change history could replace this section)
+
+| Date:  | Author: | Change: |
+| :--- | :--- | :--- |
+| 2022-xx-xx | \<name\> | description |
+| 2022-xx-xx | \<name\> | description |
+
 ## Introduction
 
-The introduction with supporting content
+Description
+
+## Test Approach
+
+The test approach
+
+## Test Plan Checklist
+
+* [ ] UI Testing
+* [ ] Negative Testing
+* [ ] Usability testing
+* [ ] Component testing
+* [ ] Integration testing
+* [ ] API & Contract testing
+* [ ] HA/DR testing
+* [ ] Scale & Performance
+* [ ] Security testing
+* [ ] Soak and Longevity testing
+
+## Execution approach
 
 ## Risks and Assumptions
 
 Service ABC is complete and can be deployed
-
-## Test Approach
-
-The test apprach
 
 ## Scope
 
@@ -43,7 +65,7 @@ This is what will be tested
 * **More Not Stuff**
   * More Detail 1
 
-## Dependencies
+## Dependencies (Include external components and environmental dependencies)
 
 Service A must be running, Service B must be running
 
@@ -166,3 +188,11 @@ Example - The current security scans must run successfully with out regressions.
 * [x] Item 2
 * [x] Item 3
 * [x] Item 4
+
+## Reviews/Approvals
+
+| Role:  | Reviewer | Approved | Rejected | Notes: |
+| :--- | :--- | :--- | :--- | :--- |
+| Program: | \<assigned pm\> | X | | |
+| Architect: | \<assigned architect \> | | X | |
+| Test Lead:| \<assigned test lead \> | X | | |

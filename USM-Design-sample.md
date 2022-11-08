@@ -5,6 +5,25 @@
 | Engineering Manager: Rodolfo Pirotti | Created: |
 | DRC Sponsor: | Milestone/Initiative: |
 
+## Changelog (if we use git, the git change history could replace this section)
+
+| Date:  | Author: | Change: |
+| :--- | :--- | :--- |
+| 2022-xx-xx | \<name\> | description |
+| 2022-xx-xx | \<name\> | description |
+
+## Design Consideration Checklist
+
+* [N] API Changes
+* [N] UI Changes
+* [Y] Testibility Review
+* [Y] Do Deployment dependencies exist
+* [Y] Failure Modes Reviewed
+* [Y] Usability Reviewed
+* [Y] HA/DR Reviewed
+* [Y] Scale & Performance Evaluated
+* [Y] Security Threat assessment
+
 ## Introduction
 
 Describe changes made to add support for USMD integration with Aurora.
@@ -56,7 +75,9 @@ As previously discussed, the scope of this feature is the integration of USM wit
 
 Regarding (1), if a test case has limitations for which it cannot be run on a virtual machine, this will be documented.
 
-## Designs Considered/Considerations
+## Design
+
+### Designs Considered/Considerations
 
 ### RPM Download (create_install_bundle.sh)
 
@@ -143,6 +164,10 @@ The current security scans must run successfully with out regressions.
 
 ## Failure Modes
 
+* **RPM not found**
+* **RPM install failure**
+* **Service Interuption**
+
 ## References
 
 * [Aurora SPIRE Entries Registries](https://github.hpe.com/pivs/wiki/blob/master/howto/SPIRE-Support.md#spire-server)
@@ -154,3 +179,11 @@ The current security scans must run successfully with out regressions.
 
 * [ ] Security Validation
 * [x] QA Sync
+
+## Reviews/Approvals
+
+| Role:  | Reviewer | Approved | Rejected | Notes: |
+| :--- | :--- | :--- | :--- | :--- |
+| Program: | \<assigned pm\> | X | | |
+| Architect: | \<assigned architect \> | | X | |
+| Test Lead:| \<assigned test lead \> | X | | |
