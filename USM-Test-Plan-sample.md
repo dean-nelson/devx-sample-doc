@@ -74,25 +74,26 @@ HPETOS-USM and USMD should be deployed and working as expected before testing. S
 *** Test Cases ***
 
 Check if USMD is installed by HSS Agents deployment and it is up and running with correct configurations as expected
-  [Documentation]
+  [Documentation] for PyTest
+  ...
+  ...    == Test Case Name  ==
+  ...     USM Rpm validation 
+  ...
   ...    == Description ==
   ...     As part of HSS Agents Deployment USM RPMs (hpetos-usm and hss-usmd) are also installed.
   ...     So, at the end of installation process, HPETOS-USM kernel module must be correctly
   ...     loadeded and USM daemon (USMD) must be active and up and running.
   ...
-  ...    == Importance ==
-  ...     P0
+  ...    ==  Workflow ==
+  ...     Aurora USM Workflow
   ...
-  ...    == Risk ==
-  ...     NA
+  ...    == Automation ==
+  ...     Automated 
   ...
-  ...    == Requirement(s) ==
+  ...    == Precondition ==
   ...     HSS Agents Deployment should be already performed with USM RPMs included on bundle (hpetos-usm and hss-usmd)
   ...
-  ...    == Run Method ==
-  ...     Automated Testing - this test is already implemented in ROBOT to run nightly.
-  ...
-  ...    == General Test Steps ==
+  ...    == Test Steps ==
   ...    Checking if configuration files for both HPETOS-USM and USMD are set as expected. Also check if HPETOS-USM module
   ...    is loaded on kernel and USMD is up and running.
   ...
@@ -101,113 +102,16 @@ Check if USMD is installed by HSS Agents deployment and it is up and running wit
   ...     1. Checks that the 'USMD' JSON configuration file is configured as expected
   ...     2. Checks that the 'HPETOS-USM' configuration file is configured as expected
   ...     3. Checks that the 'HPETOS-USM' module is loaded on kernel
+  ...
+  ...    == Expected Result ==
+  ... 
   ...     4. Checks that the 'USMD' service is up and running
+  ...
+  ...    == Type ==
+  ...    Type: Functional | Load | Performance
   ...
   ...    == Jira Task ==
   ...     VF-5624 (test related to the code implemented on VF-5623)
-```
-
-### Subscription Creation
-
-```Robot
-*** Test Cases ***
-
-Check if Platform Agent is able to create subscription and check if the information is as expected 
-  [Documentation]
-  ...    == Description == 
-  ...     In order for the hss-device-events to be able to receive the alerts, the Platform Agent 
-  ...     creates a subscription in the USMD informing the hss-device-events address as destination, 
-  ...     in addition to other informations, such as retry attempts and the interval between events sending. 
-  ...     Therefore, the purpose of this test is to verify that the Platform Agent is able to create the 
-  ...     subscription in the USMD and to verify, once created, if the subscription has the expected values. 
-  ... 
-  ...    == Importance == 
-  ...     P0
-  ...
-  ...    == Risk ==
-  ...     NA 
-  ... 
-  ...    == Requirement(s) ==  
-  ...     Platform Agent client service is up and running as expected. 
-  ...
-  ...    == Run Method ==
-  ...     Automated Testing - this test is already implemented in ROBOT to run nightly. 
-  ...         
-  ...    == General Test Steps ==
-  ...     After starting, one of the processes performed by the Platform Agent will be to check if the subscription 
-  ...     exists and create it if it doesn't. To this end, this test will consist of verifying that, after being up 
-  ...     and running, the Platform Agent was able to create the subscription correctly. 
-  ...
-  ...     As steps we have: 
-  ...           
-  ...     1. Checks that the 'Platform Agent' client service is up and running 
-  ...     2. Make a GET request to USMD endpoint 
-  ...     3. Check if the subscription has already been created 
-  ...     4. Check that the information (Destination, DeliveryRetryAttempts, etc.) is as expected 
-  ...
-  ...    == Jira Task == 
-  ...     VF-5632 
-
-Try creating two subscriptions to the same USMD (Restart PAPA)
-  [Documentation]
-  ...    == Description == 
-  ...     In the established design, the USMD subscription will only be created once by the PAPA which before creating it, 
-  ...     must always check whether the USMD has already been subscribed or not, avoiding the creation of another subscription. 
-  ...     Thus, this test aims to verify if when restarting the PAPA, the check for the existence of the USMD subscription 
-  ...     occurs correctly or if an erroneous flow occurs trying to create a new subscription incorrectly.
-  ... 
-  ...    == Importance == 
-  ...     P0
-  ...
-  ...    == Risk ==
-  ...     NA 
-  ... 
-  ...    == Requirement(s) ==  
-  ...     Platform Agent client service is up and running as expected. 
-  ...
-  ...    == Run Method ==
-  ...     Automated Testing - this test is already implemented in ROBOT to run nightly. 
-  ...         
-  ...    == General Test Steps ==
-  ...     1. Checks that the 'Platform Agent' client service is up and running
-  ...     2. Make a GET request to USMD endpoint 
-  ...     3. Check if the subscription has already been created
-  ...     4. Check that the information (Destination, DeliveryRetryAttempts, etc.) is as expected
-  ...     5. Restart the 'Plataform Agent' 
-  ...     6. Checks that the 'Platform Agent' client service is up and running 
-  ...     7. Make a GET request to USMD endpoint 
-  ...     8. Check if the same subscription continues 
-  ...
-  ...     == Jira Task == 
-  ...      VF-5632 
-
-Try creating a subscription with USMD not available
-  [Documentation]
-  ...    == Description == 
-  ...     It is expected that without USMD working, the creation of a subscription will not happen, as the PAPA
-  ...     would not be able to access its endpoint. The purpose of the present test case is to try to create 
-  ...     a subscription through PAPA with the USMD not available, and check the error/warn returned.
-  ... 
-  ...    == Importance == 
-  ...     P0
-  ...
-  ...    == Risk ==
-  ...     NA 
-  ... 
-  ...    == Requirement(s) ==  
-  ...     Platform Agent client service is up and running as expected. 
-  ...
-  ...    == Run Method ==
-  ...     Automated Testing - this test is already implemented in ROBOT to run nightly. 
-  ...         
-  ...    == General Test Steps ==
-  ...           
-  ...     1. Checks that the 'Platform Agent' client service is up and running 
-  ...     2. Make a GET request to USMD endpoint 
-  ...     3. Check the PAPA logs and check if the error/warn was generated
-  ...
-  ...    == Jira Task == 
-  ...     VF-5632 
 ```
 
 ## Secutity

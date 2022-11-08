@@ -53,103 +53,83 @@ Service A must be running, Service B must be running
 
 ### Test Case 1 - Summary (Description can be exported to actual test.  Should we validate tests are written?)
 
-#### Tags: A, B, C | Automated: Y/N | Precondition: | Type: Automated | Manual  Frequency: PR | Nightly | Weekly
-
-```Robot
-  [Documentation]
+```text
+  [Documentation] for PyTest
+  ...    == Test Case Name  ==
+  ...     Test case name .e.g.  Valid User Login
+  ...
   ...    == Description ==
   ...     Well written discription
   ...
-  ...    == Importance ==
-  ...     P0 | P1 | P2 | P3
+  ...    ==  Workflow ==
+  ...     Workflow name e.g. GLCP Login Workflow
   ...
-  ...    == Risk ==
-  ...     Low | Medium | High
+  ...    == Automation ==
+  ...     Automated | Manual
   ...
-  ...    == Requirement(s) ==
-  ...     Precondiation for this test
+  ...    == Precondition ==
+  ...     Precondiation for this test  e.g. user is created and registered in the system
   ...
   ...    == Run Method ==
-  ...     Type: Automated | Manual  Frequency: PR | Nightly | Weekly 
+  ...     Type: Automated | Manual  
   ...
-  ...    == General Test Steps ==
-  ...    Step 1
-  ...    Step 2
+  ...    == Steps ==
+  ...    Go to HPE GreenLake 
+  ...    Enter valid user and clock Login
   ...    Step 3
-  ...    Check result
-  ...
+  ...    
+  ...    == Expected Result ==
+  ...    User is logged in successfully
+  ...   
+  ...    == Type ==
+  ...    Type: Functional | Load | Performance
+  ...   
   ...    == Jira Task ==
-  ...    Task link
+  ...    Task link (if applicable)
 ```
 
 ## Feature 2
 
 ### Test Case 1 - Summary
 
-#### Tags: A, B, C
-
-```Robot
-Check if Platform Agent is able to create subscription and check if the information is as expected 
-    [Documentation]
+```text
+  [Documentation] for PyTest
+  ...    == Test Case Name  ==
+  ...     Test case name .e.g.  Valid User Login
+  ...
   ...    == Description ==
   ...     Well written discription
   ...
-  ...    == Importance ==
-  ...     P0 | P1 | P2 | P3
+  ...    ==  Workflow ==
+  ...     Workflow name e.g. GLCP Login Workflow
   ...
-  ...    == Risk ==
-  ...     Low | Medium | High
+  ...    == Automation ==
+  ...     Automated | Manual
   ...
-  ...    == Requirement(s) ==
-  ...     Precondiation for this test
-  ...
-  ...    == Run Method ==
-  ...     Type: Automated | Manual  Frequency: PR | Nightly | Weekly 
-  ...
-  ...    == General Test Steps ==
-  ...    Step 1
-  ...    Step 2
-  ...    Step 3
-  ...    Check result
-  ...
-  ...    == Jira Task ==
-  ...    Task link
-```
-
-### Test Case 2 - Summary
-
-#### Tags: A, B, C
-
-```Robot
-    [Documentation]
-  ...    == Description ==
-  ...     Well written discription
-  ...
-  ...    == Importance ==
-  ...     P0 | P1 | P2 | P3
-  ...
-  ...    == Risk ==
-  ...     Low | Medium | High
-  ...
-  ...    == Requirement(s) ==
-  ...     Precondiation for this test
+  ...    == Precondition ==
+  ...     Precondiation for this test  e.g. user is created and registered in the system
   ...
   ...    == Run Method ==
-  ...     Type: Automated | Manual  Frequency: PR | Nightly | Weekly 
+  ...     Type: Automated | Manual  
   ...
-  ...    == General Test Steps ==
-  ...    Step 1
-  ...    Step 2
+  ...    == Steps ==
+  ...    Go to HPE GreenLake 
+  ...    Enter valid user and clock Login
   ...    Step 3
-  ...    Check result
-  ...
+  ...    
+  ...    == Expected Result ==
+  ...    User is logged in successfully
+  ...   
+  ...    == Type ==
+  ...    Type: Functional | Load | Performance
+  ...   
   ...    == Jira Task ==
-  ...    Task link
+  ...    Task link (if applicable)
 ```
 
 ## Failure modes (Can link back to feature design)
 
-Identify possible failure situations taht you are accounting for
+Identify possible failure situations that you are accounting for
 
 * Case 1
 * Case 2
@@ -182,9 +162,7 @@ Example - The current security scans must run successfully with out regressions.
 
 ## Checklist
 
-* [ ] Mercury
-* [x] Venus
-* [x] Earth (Orbit/Moon)
-* [x] Mars
-* [ ] Jupiter
-* [ ] Saturn
+* [ ] Item 1
+* [x] Item 2
+* [x] Item 3
+* [x] Item 4
